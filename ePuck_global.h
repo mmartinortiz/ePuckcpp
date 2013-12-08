@@ -1,0 +1,12 @@
+#ifndef EPUCKCPP_GLOBAL_H
+#define EPUCKCPP_GLOBAL_H
+
+#include <QtCore/qglobal.h>
+
+#if defined(EPUCKCPP_LIBRARY)
+#  define EPUCKCPPSHARED_EXPORT Q_DECL_EXPORT
+#else
+#  define EPUCKCPPSHARED_EXPORT Q_DECL_IMPORT
+#endif
+
+#endif // EPUCKCPP_GLOBAL_H
